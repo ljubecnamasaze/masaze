@@ -1,0 +1,39 @@
+#image-section {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#image {
+  width: 100%;
+}
+
+#image-display {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: #f4f4f4;
+}
+
+#prev-button, #next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #f4f4f4;
+  background-color: #CDB47B;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#prev-button {
+  left: 10px;
+}
+
+#next-button {
+  right: 10px;
+}
+

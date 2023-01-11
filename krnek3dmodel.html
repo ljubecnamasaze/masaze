@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <!-- Include the three.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.119.1/build/three.min.js"></script>
+  </head>
+  <body>
+    <!-- Create a container for the 3D scene -->
+    <div id="container"></div>
+    <script>
+      // Create a scene, camera, and renderer
+      var scene = new THREE.Scene();
+      var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      var renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.getElementById("container").appendChild(renderer.domElement);
+
+      // Load the 3D model
+      var loader = new THREE.OBJLoader2();
+      loader.load("Skeleton CAT Vray.max", function (obj) {
+        // Add the 3D model to the scene
+        scene.add(obj.detail.loaderRootNode);
+      });
+
+      // Add lighting to the scene
+      var light = new THREE.PointLight(0xFFFFFF, 1, 1000);
+      light.position.set(0, 0, 0);
+      scene.add(light);
+
+      // Animate the scene using the render loop
+      function animate() {
+        requestAnimationFrame(animate);
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+  </body>
+</html>

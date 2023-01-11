@@ -1,0 +1,97 @@
+/* Add styles for the body element */
+body {
+  background-color: #f9e1cb; /* Warm, light yellow color */
+  font-family: sans-serif;
+  color: #333;
+}
+
+/* Add styles for the header element */
+header {
+  background-color: #f75c3c; /* Warm, orange color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add styles for the nav element */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f75c3c; /* Warm, orange color */
+  color: #fff;
+  padding: 0 20px;
+}
+
+/* Add styles for the footer element */
+footer {
+  background-color: #f75c3c; /* Warm, orange color */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Add styles for the main element */
+main {
+  padding: 20px;
+}
+
+/* Add styles for the section element */
+section {
+  background-color: #f9e1cb; /* Warm, light yellow color */
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Add styles for the h1 element */
+h1 {
+  font-size: 32px;
+  margin: 0 0 20px 0;
+  color: #f75c3c; /* Warm, orange color */
+}
+
+/* Add styles for the h2 element */
+h2 {
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  color: #f75c3c; /* Warm, orange color */
+}
+
+/* Add styles for the p element */
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+/* Add styles for the a element */
+a {
+  color: #f75c3c; /* Warm, orange color */
+  text-decoration: none;
+}
+
+/* Add styles for the ul element */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Add styles for the li element */
+li {
+  margin: 10px 0;
+}
+
+/* Use media queries to apply different styles based on the width of the device's screen */
+@media (max-width: 768px) {
+  /* Adjust the layout for small screens */
+  nav {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+}
